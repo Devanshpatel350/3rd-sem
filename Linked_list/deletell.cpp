@@ -1,4 +1,4 @@
-// INSERT IN MIDDLE OF A LINKED LIST ... By Surya Shrivastava
+// DELETE A LINKED LIST ... By Surya Shrivastava
 #include <iostream>
 using namespace std;
 class Node {
@@ -9,6 +9,13 @@ class Node {
         data = val;
         next = NULL;
     }
+    ~Node() {
+        cout << "~Node " << data << "\n";
+        if(next != NULL) {
+            delete next;
+            next = NULL;
+        }
+    }
 };
 class List {
     Node* head;
@@ -18,8 +25,15 @@ class List {
         head = NULL;
         tail = NULL;
     }
+    ~List() {
+        cout << "~List " << "\n";
+        if(head != NULL) {
+            delete head;
+            head = NULL;
+        }
+    }
     void push_front(int val) {
-        Node* newNode = new Node(val);
+        Node* newNode = new Node(val);  // dynamic
         if(head == NULL) {
             head = newNode;
             tail = newNode;
@@ -29,7 +43,7 @@ class List {
         }
     }
     void push_back(int val) {
-        Node* newNode = new Node(val);
+        Node* newNode = new Node(val);  // dynamic
         if(head == NULL) {
             head = tail = newNode;
         }else {
