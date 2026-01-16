@@ -1,0 +1,19 @@
+package java;
+
+import java.util.HashSet;
+
+class hello {
+    public static void main(String[] args) {
+        int arr[] = {1, 2, 3, 4, 3, 2};
+
+        HashSet<Integer> set = new HashSet<>();
+
+        for (int x : arr) {
+            set.add(x);
+        }
+
+        if (arr.length == set.size()) {
+            System.out.println(true);
+        } else
+    }
+}

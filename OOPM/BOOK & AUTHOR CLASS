@@ -1,0 +1,144 @@
+// #include <iostream>
+// using namespace std;
+
+// class Author
+// {
+// private:
+//     string name;
+//     string email;
+//     char gender;
+// public:
+//     Author(string name, string email, char gender)
+//     {
+//         this->name = name;
+//         this->email = email;
+//         this->gender = gender;
+//     }
+//     string getName() {
+//         return name;
+//     }
+//     string emailName() {
+//         return email;
+//     }
+//     void setEmail(string email) {
+//         this->email = email;
+//     }
+
+//     char getGender() {
+//         return gender;
+//     }
+
+//     string toString() {
+//         string str = "Author[name=" + name + ", email=" + email + ", gender=" + gender+"]";
+//         return str;
+//     }
+// };
+
+// class book 
+// {
+
+
+// }
+// int main() {
+//     Author a("Zohaib Hasan", "zohaib.cs@global.org.in", 'M');
+//     cout << a.toString();
+// }
+
+
+// #include <iostream>
+// #include <iomanip>
+// using namespace std;
+
+// class Author
+// {
+// private:
+//     string name;
+//     string email;
+//     char gender;
+// public:
+//     Author() {}
+//     Author(string name, string email, char gender)
+//     {
+//         this->name = name;
+//         this->email = email;
+//         this->gender = gender;
+//     }
+//     //getter / accessor
+//     string getName() {
+//         return name;
+//     }
+//     string getEmail() {
+//         return email;
+//     }
+//     char getGender() {
+//         return gender;
+//     }
+//     //setter / mutator
+//     void setEmail(string email) {
+//         this->email = email;
+//     }
+
+//     string toString() {
+//         string str = "Author[name=" + name + ", email=" + email + ", gender=" + gender+"]";
+//         return str;
+//     }
+// };
+
+// class Book
+// {
+// private:
+//     string name;
+//     Author author;
+//     double price;
+//     int quantity;
+// public:
+//     Book(string name, Author author, double price)
+//     {
+//         this->name = name;
+//         this->price = price;
+//         this->author = author;
+//     }
+//     Book(string name, Author author, double price, int quantity)
+//     {
+//         this->name = name;
+//         this->price = price;
+//         this->author = author;
+//         this->quantity = quantity;
+//     }
+
+//     string getName() {
+//         return name;
+//     }
+
+//     Author getAuthor() {
+//         return author;
+//     }
+
+//     double getPrice() {
+//         return price;
+//     }
+
+//     int getQty() {
+//         return quantity;
+//     }
+
+//     void setPrice(double price) {
+//         this->price = price;
+//     }
+
+//     void setQty(int quantity) {
+//         this->quantity = quantity;
+//     }
+
+//     string toString() {
+//         string bookDetails = "Book[name="+name+","+author.toString()+
+//         ",price="+ to_string(price) +",quantity=" +to_string(quantity)+ "]";
+//         return bookDetails;
+//     }
+// };
+
+// int main() {
+//     Author a("Zohaib Hasan", "zohaib.cs@global.org.in", 'M');
+//     Book b("Inception", a, 230, 5);
+//     cout << b.toString();
+// }
